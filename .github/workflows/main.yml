@@ -1,0 +1,12 @@
+name: Testing the Secrets
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Use secret
+        run: echo "My key is ${{secrets.MY_NAME}}
+
+  
+    
